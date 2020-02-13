@@ -12,7 +12,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 @ToString
 @XmlRootElement(name ="response")
 public class Response {
-//    private Header header;
+    private Header header;
     private Body body;
 
 }
