@@ -3,4 +3,4 @@ spring:
   template.cache: false
 
 data:
-    ServiceKey: {privateKey!!}
+    ServiceKey: ???
