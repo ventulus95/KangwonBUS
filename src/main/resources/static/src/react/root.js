@@ -2,13 +2,13 @@
 
 import React, { Component } from 'react';
 import {BrowserRouter, Route} from 'react-router-dom';
-import Main from './pages/main';
-
+import Main from './pages/main/main';
+import DetailContent from './pages/detailContent/detailContent'
 const Root = () =>(
     <BrowserRouter>
         <div>
             <Route exact path = "/" component={Main}/>
-            <Route exact path = "/test" component={Main}/>
+            <Route path = "/busDetail:busTitle" component={DetailContent}/>
         </div>
     </BrowserRouter>
 )

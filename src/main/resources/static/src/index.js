@@ -13,6 +13,7 @@ let links = [
 
 $(document).ready(() => {
     console.log('trigger document ready!!!');
+    console.log('test')
     ReactDOM.render(<Root/>, document.getElementById('root'));
 });
 

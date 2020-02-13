@@ -16,14 +16,14 @@ import java.util.List;
 @ToString
 @XmlRootElement(name = "body")
 public class Body {
-    private List<Item> items;
+    private List<BusStopDto> busStopDtos;
     private int numOfRows;
     private int pageNo;
     private int totalCount;
 
     @XmlElementWrapper(name = "items")
     @XmlElement(name = "item")
-    public List<Item> getItems() {
-        return items;
+    public List<BusStopDto> getBusStopDtos() {
+        return busStopDtos;
     }
 }
