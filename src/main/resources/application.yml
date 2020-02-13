@@ -1,6 +1,0 @@
-spring:
-  thymeleaf.cache: false
-  template.cache: false
-
-data:
-    ServiceKey: ???
