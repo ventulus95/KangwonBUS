@@ -19,4 +19,6 @@ public class DispatchController {
         model.addAttribute("hello", "안녕하세요.");
         return "index";
     }
+
+
 }
