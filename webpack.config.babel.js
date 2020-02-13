@@ -12,7 +12,7 @@ module.exports = (() => {
         src = (...p) => joinPath('src', ...p),
         config = {
             entry : {
-                'reactApp': src('/react/app.js'),
+                'reactApp': src('/react/root.js'),
                 'index': src('/index.js')
             },
             output : {

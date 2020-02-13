@@ -2,7 +2,8 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ReactApp from './react/app';
+import Root from './react/root';
+import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import $ from 'jquery';
 
@@ -12,6 +13,6 @@ let links = [
 
 $(document).ready(() => {
     console.log('trigger document ready!!!');
-    ReactDOM.render(<ReactApp/>, document.getElementById('link'));
+    ReactDOM.render(<Root/>, document.getElementById('root'));
 });
 
