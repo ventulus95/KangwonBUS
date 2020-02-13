@@ -13,24 +13,18 @@ class App extends Component {
     }
 
     changeColor(color) {
+        console.log('chaged');
         this.setState({ canvasColor: color });
+
     }
 
     render() {
         let _self = this;
         return (
             <div>
-                <div id={this.props.name} className={this.state.canvasColor}>Change Color</div>
-                <a class="btn btn-danger" onClick={e => _self.changeColor('red')}>Red</a>
-                <a class="btn btn-primary" onClick={e => _self.changeColor('blue')}>Blue</a>
-                <a class="btn btn-success" onClick={e => _self.changeColor('green')}>Green</a>
-                <a class="btn btn-default" onClick={e => _self.changeColor('default')}>Default</a>
+                강원대학교 300번 버스 알림이
             </div>
         );
     }
 }
-
-ReactDOM.render(
-    <App name="canvas"/>,
-    document.getElementById('root')
-);
+export default App
